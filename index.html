@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja de Instrumentos</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/css/main.css">
+</head>
+<body>
+    <header class="navbar navbar-expand-lg sticky-top p-4" id="cabecalho">
+        <div class="container">
+            <h1 class="navbar-brand m-0 section-title logo p-1" >Loja de Instrumentos</h1>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="navbar-collapse collapse justify-content-end" id="menu-navegacao">
+                <ul class="nav nav-pills d-block d-md-flex">
+                    <li class="nav-item fw-bold">
+                        <a href="#sobre-nos" class="nav-link">
+                            <i class="bi bi-music-note me-1"></i>
+                            Sobre Nós
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#instrumentos" class="nav-link">
+                            <i class="bi bi-guitar me-1"></i>
+                            Instrumentos
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#eventos" class="nav-link">
+                            <i class="bi bi-calendar-check me-1"></i>
+                            Eventos
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#fale-conosco" class="nav-link">
+                            <i class="bi bi-envelope-fill me-1"></i>
+                            Fale Conosco
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div data-bs-spy="scroll" data-bs-target="cabecalho" data-bs-smooth-scroll="true">
+        <section id="sobre-nos">
+            <div class="container pt-5 pb-5">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="./src/img/instrumentos.jpg" class="d-block w-100 rounded" alt="Instrumentos Musicais">
+                    </div>
+                    <div class="col-md-6 mt-3 mt-md-0">
+                        <h2 class="section-title">Sobre <span class="text-colored">Nós</span></h2>
+                        <p>
+                            Somos uma loja dedicada a oferecer os melhores instrumentos musicais para músicos de todos os níveis e estilos. Nossa paixão pela música nos impulsiona a fornecer produtos de alta qualidade e atendimento excepcional.
+                        </p>
+                        <h3 class="section-title">Nossa <span class="text-colored">Missão</span></h3>
+                        <p>
+                            Proporcionar uma experiência musical única para nossos clientes, oferecendo produtos de excelência e suporte especializado.
+                        </p>
+                        <ul>
+                            <li>Ampla variedade de instrumentos musicais</li>
+                            <li>Assistência técnica especializada</li>
+                            <li>Atendimento personalizado</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="instrumentos" class="d-flex flex-column justify-content-center align-items-center pt-5 pb-5 bg-light">
+            <div class="container">
+                <h2 class="section-title text-center mb-5">
+                    Nossos <span class="text-colored">Instrumentos</span>
+                </h2>
+                <div class="row">
+                    <!-- Aqui você pode listar os instrumentos disponíveis na sua loja -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="./src/img/guitarra.jpg" class="card-img-top" alt="Guitarra">
+                            <div class="card-body">
+                                <h5 class="card-title">Guitarra</h5>
+                                <p class="card-text">Descrição do produto e preço.</p>
+                                <a href="#" class="btn btn-primary">Ver detalhes</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="./src/img/drum.jpg" class="card-img-top" alt="Bateria">
+                            <div class="card-body">
+                                <h5 class="card-title">Bateria</h5>
+                                <p class="card-text">Descrição do produto e preço.</p>
+                                <a href="#" class="btn btn-primary">Ver detalhes</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="./src/img/paiano.jpg" class="card-img-top" alt="Piano">
+                            <div class="card-body">
+                                <h5 class="card-title">Piano</h5>
+                                <p class="card-text">Descrição do produto e preço.</p>
+                                <a href="#" class="btn btn-primary">Ver detalhes</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel slide w-70" data-bs-ride="carousel" id="carousel">
+                <div class="carousel-inner  w-70">
+               
+                    <div class="carousel-item active w-70 " data-bs-interval="3000">
+                        <img src="./src/img/slide-2.jpg" alt="Duas taças de vinho">
+                    </div>
+                    <div class="carousel-item w-70 " data-bs-interval="3000">
+                        <img src="./src/img/slide-3.jpg" alt="Uma mesa com comida">
+                    </div>
+                </div>
+                
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel" class="active" data-bs-slide-to="0"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                    
+                </div>
+            </div>
+        </section>
+        <section id="eventos" class="pt-5 pb-5">
+            <div class="container">
+                <h2 class="section-title text-center mb-5">
+                    Eventos <span class="text-colored">Musicais</span>
+                </h2>
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="./src/img/band-performing-studio.jpg" class="card-img-top" alt="Evento Musical">
+                            <div class="card-body">
+                                <h5 class="card-title">Concerto ao ar livre</h5>
+                                <p class="card-text">Data do evento e breve descrição.</p>
+                                <a href="#" class="btn btn-primary">Mais detalhes</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="./src/img/woman-singing-microphone.jpg" class="card-img-top" alt="Evento Musical">
+                            <div class="card-body">
+                                <h5 class="card-title">Workshop de música</h5>
+                                <p class="card-text">Data do evento e breve descrição.</p>
+                                <a href="#" class="btn btn-primary">Mais detalhes</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="./src/img/vocalist-guitarist-stage.jpg" class="card-img-top" alt="Evento Musical">
+                            <div class="card-body">
+                                <h5 class="card-title">Festival de Bandas</h5>
+                                <p class="card-text">Data do evento e breve descrição.</p>
+                                <a href="#" class="btn btn-primary">Mais detalhes</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="fale-conosco" class="pt-5 pb-5 bg-light">
+            <div class="container">
+                <h2 class="section-title text-center mb-5">
+                    Fale <span class="text-colored">Conosco</span>
+                </h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <form>
+                            <div class="mb-3">
+                                <label for="nome" class="form-label fw-bold">Seu nome</label>
+                                <input type="text" id="nome" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label fw-bold">Seu e-mail</label>
+                                <input type="email" id="email" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="mensagem" class="form-label fw-bold">Sua mensagem</label>
+                                <textarea class="form-control" id="mensagem" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary fw-bold">Enviar</button>
+                        </form>
+                    </div>
+                    <div class="col-md-6">
+                        <h3 class="section-title mb-4">Nossos <span class="text-colored">Contatos</span></h3>
+                        <p>
+                            Telefone: (XX) XXXX-XXXX <br>
+                            E-mail: contato@lojadeinstrumentos.com <br>
+                            Endereço: Rua dos Músicos, 123 - Centro
+                        </p>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3860.220421822589!2d-96.79774948514985!3d32.78013989046416!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zN8KwMDknMDIuOCJOIDk2wrAzMCcwMi44Ilc!5e0!3m2!1spt-BR!2sbr!4v1649960726258!5m2!1spt-BR!2sbr" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer class="bg-dark text-light text-center p-4">
+        <div class="container">
+            <p>&copy; 2024 Loja de Instrumentos Musicais</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

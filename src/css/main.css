@@ -1,0 +1,17 @@
+
+
+.logo{
+  color: #3a7ada;
+}
+
+.logo:hover{
+  padding: 5px;
+  border-radius: 10px;
+  background-color: #0D6EFD;
+  color: #FFF;
+  cursor: pointer;
+  transition: 0.9s;
+}
+.carousel-inner{
+  max-height: 500px;
+}
